@@ -1,0 +1,25 @@
+.news-head{
+    color: orange;
+    text-shadow: 2px 3px 3px teal;
+    margin-top: 2rem;
+}
+
+.news-heading{
+    color: teal;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+  }
