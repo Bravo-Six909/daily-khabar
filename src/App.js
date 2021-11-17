@@ -15,7 +15,7 @@ function App() {
           <Routes>         
             <Route exact path="/business" element={<News key="business" categories="business" />}></Route>
             <Route exact path="/entertainment" element={<News key="entertainment" categories="entertainment" />}></Route>
-            <Route exact path="/" element={<News key="general" categories="general" />}></Route>
+            <Route exact path="/" element={<News key="general" categories="top" />}></Route>
             <Route exact path="/health" element={<News key="health" categories="health" />}></Route>
             <Route exact path="/science" element={<News key="science" categories="science" />}></Route>
             <Route exact path="/sports" element={<News key="sports" categories="sports" />}></Route>

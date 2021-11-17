@@ -5,9 +5,15 @@
 }
 
 .news-heading{
+    font-size: 2rem;
     color: teal;
     margin-top: 1rem;
     margin-bottom: 3rem;
+}
+
+.loading{
+    font-size: 3rem;
+    text-align: center;
 }
 
 .cardContainer{
@@ -20,6 +26,8 @@
     .cardContainer{
         display: grid;
         grid-template-columns: 1fr;
-
+    }
+    .navbar-app{
+        margin-bottom: 30px;
     }
   }

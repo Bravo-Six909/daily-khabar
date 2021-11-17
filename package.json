@@ -2,6 +2,7 @@
   "name": "daily-khabar",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://newsdata.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",

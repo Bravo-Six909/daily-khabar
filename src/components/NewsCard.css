@@ -72,9 +72,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 587px) {
-    body {
-      background-color: lightblue;
-    }
+    
     .img_div img{
         width: 100%;
     }
