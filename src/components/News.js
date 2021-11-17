@@ -9,10 +9,11 @@ const News = ({categories}) => {
 
     useEffect(() => {
         const fetchapi = async () => {
-            const res = await fetch(`/api/1/news?apikey=pub_2193a11a5a27c83a8c9502f291097ea53c12&language=en&country=in&category=${categories}`);
+            const res = await fetch(`/api/1/news?apikey=${process.env.REACT_APP_API_KEY}&language=en&country=in&category=${categories}`);
             const resjson = await res.json();
             setNewsItem(resjson.results);
         }
+
 
         fetchapi();
 
