@@ -45,6 +45,10 @@
     bottom: 10px;
 }
 
+.news-heading{
+    margin-left: 20px;
+}
+
 .news_text{
     object-fit: cover;
     margin-left: 25px ;
@@ -75,6 +79,13 @@ button:hover{
     
     .img_div img{
         width: 100%;
+    }
+    .news-head{
+        text-align: center;
+        
+    }
+    .news-heading{
+        text-align: center;
     }
 
   }

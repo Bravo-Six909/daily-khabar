@@ -9,7 +9,7 @@ function NewsCard(props) {
         <div className="card mb-3 text-align-start newsCardContainer" style={{ maxWidth: "540px", textAlign: "left" }}>
           <div className="row g-0">
             <div className="col-md-4 img_div" style={{ display: "flex", alignItems: "center" }}>
-              <img  src={!props.img ? noImage : props.img} className="img-fluid rounded-start" alt="..." />
+              <img  src={!props.img ? noImage : props.img} className="img-fluid rounded-start" />
             </div>
             <div className="col-md-8">
               <div className="card-body">

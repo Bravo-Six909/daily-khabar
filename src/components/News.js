@@ -22,18 +22,22 @@ const News = ({ categories }) => {
 
     }, []);
 
+    let category = categories;
+    if(category === "top"){
+        category = "general";
+    }
+
 
     return (
         <div>
-
-            <h3 className="news-head">Welcome to Daily- Khabar</h3>
-            <h1 className="news-heading">Here are some of the top headlines on {categories}</h1>
+            <h3 className="news-head">Welcome to Daily-Khabar</h3>
+            <h1 className="news-heading">Here are some of the top headlines on {category}</h1>
             {console.log(newsItem)}
             <div className="cardContainer">
                 {!newsItem ? <img className="loading" src="https://miro.medium.com/max/700/1*CsJ05WEGfunYMLGfsT2sXA.gif" alt="Loading" /> :
                     newsItem.map((item, i) => {
                         return (
-                            <NewsCard className="items" key={i} style={item} img={item.media_content[0]} title={item.title} body={item.summary} time={item.published_date} author={item.author} url={item.link} />
+                            <NewsCard className="items" key={i} style={item} img={item.media_content[1]} title={item.title} body={item.summary} time={item.published_date} author={item.author} url={item.link} />
                         )
                     })
                 }
