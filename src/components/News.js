@@ -8,7 +8,7 @@ const News = ({ categories }) => {
     const [newsItem, setNewsItem] = useState([]);
 
     useEffect(() => {
-        fetch(`https://newscatcher.p.rapidapi.com/v1/search_free?q=${categories}&lang=en&media=True`, {
+        fetch(`https://newscatcher.p.rapidapi.com/v1/search_free?q=${categories},india&lang=en&media=True`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "newscatcher.p.rapidapi.com",
